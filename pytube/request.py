@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Implements a simple wrapper around urlopen."""
-import urllib.request
+from six.moves import urllib
+
+request = urllib.request
 
 from pytube.compat import urlopen
 # 403 forbidden fix
